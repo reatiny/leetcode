@@ -14,12 +14,18 @@
 // Related Topics 数组 双指针
 
 
-//leetcode submit region begin(Prohibit modification and deletion)
+package leetcode.editor.cn;
+class MoveZeroes {
+    public static void main(String[] args) {
+        Solution solution = new MoveZeroes().new Solution();
+        int[] a = {1,3,0,7,9};
+        solution.moveZeroes(a);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+        }
+    }
 
-/**
- * loop,find num which is not zero
- * fill with zero in nums
- */
+    //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public void moveZeroes(int[] nums) {
         int j = 0;
@@ -34,3 +40,5 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+
+}
