@@ -79,4 +79,20 @@ class LinkedListCycle {
 2. Set 遍历一个标记下，看看有没有节点二次标记。
 3. 快慢指针，快指针追上慢指针则有环。*/
 
-//容易出现空指针的问题 循环条件里fast写成slow就空指针；头指针判空不写也空指针。
+/*容易出现空指针的问题 循环条件里fast写成slow就空指针；头指针判空不写也空指针。*/
+
+/*
+The if(head==null) check can be further removed.
+
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        ListNode walker = head;
+        ListNode runner = head;
+        while(runner!=null && runner.next!=null) {
+            walker = walker.next;
+            runner = runner.next.next;
+            if(walker==runner) return true;
+        }
+        return false;
+    }
+}*/
